@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "servicegerbil"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{A set of rspec helpers for testing json-based web services}
     gem.email = "psadauskas@gmail.com"
     gem.homepage = "http://github.com/paul/servicegerbil"
     gem.authors = ["Paul Sadauskas"]
 
-    gem.add_dependency 'merb', '~> 1.1.0'
-    gem.add_dependency 'facets', '~> 2.4.0'
+    gem.add_dependency 'merb-core', '~> 1.1.0'
+    gem.add_dependency 'facets', '~> 2.5.0'
     gem.add_dependency 'json', '~> 1.1.0'
     gem.add_dependency 'rspec', '~> 1.2.4'
 

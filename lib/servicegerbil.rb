@@ -1,6 +1,4 @@
 
-require 'rspec'
-
 __DIR__ = File.dirname(__FILE__)
 
 require __DIR__ + '/servicegerbil/request_helpers'
@@ -67,9 +65,3 @@ module ServiceGerbil
 
 end
 
-Spec::Runner.configure do |config|
-
-  config.extend(ServiceGerbil::GroupHelpers, :type => :service)
-  config.include(ServiceGerbil::ExampleHelpers, :type => :service)
-
-end
