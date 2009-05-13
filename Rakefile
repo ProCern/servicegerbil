@@ -10,7 +10,11 @@ begin
     gem.homepage = "http://github.com/paul/servicegerbil"
     gem.authors = ["Paul Sadauskas"]
 
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency 'merb', '~> 1.1.0'
+    gem.add_dependency 'facets', '~> 2.4.0'
+    gem.add_dependency 'json', '~> 1.1.0'
+    gem.add_dependency 'rspec', '~> 1.2.4'
+
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
