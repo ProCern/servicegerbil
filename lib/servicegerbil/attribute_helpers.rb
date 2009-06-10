@@ -67,7 +67,6 @@ module ServiceGerbil
           subject(key => val)
           response.should be_successful
           response.should have_pair(key, val)
-          resource.send(key).should == val
         end
       end
 
